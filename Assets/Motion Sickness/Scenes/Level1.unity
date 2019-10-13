@@ -152,11 +152,31 @@ MonoBehaviour:
   editorData:
     _bezierPath:
       points:
-      - {x: -2, y: 0, z: 0}
-      - {x: -1.3025595, y: 1.5601366, z: -0.5636344}
+      - {x: -26.248363, y: -3.006403, z: 3.9364853}
+      - {x: -24.88447, y: -2.3402362, z: 2.9699707}
       - {x: 1, y: -0.5, z: 0}
       - {x: 2, y: 0, z: 0}
-      isClosed: 0
+      - {x: 11.039521, y: 4.5197606, z: 0}
+      - {x: 13.587086, y: 9.480925, z: -0.22501945}
+      - {x: 16.13465, y: 14.442088, z: -0.4500389}
+      - {x: 19.455523, y: 20.909206, z: -0.7433627}
+      - {x: 11.619801, y: 19.192692, z: 2.9391553}
+      - {x: 3.7840776, y: 17.476177, z: 6.6216736}
+      - {x: -4.8171387, y: 15.591971, z: 10.663946}
+      - {x: -10.097765, y: 16.853064, z: 10.046134}
+      - {x: -15.378391, y: 18.114155, z: 9.428322}
+      - {x: -22.205338, y: 19.74453, z: 8.629597}
+      - {x: -25.599453, y: 17.79949, z: 7.517853}
+      - {x: -28.993568, y: 15.854451, z: 6.406109}
+      - {x: -34.588238, y: 12.648358, z: 4.5735726}
+      - {x: -36.1238, y: 10.322378, z: 2.2147362}
+      - {x: -37.65936, y: 7.996399, z: -0.14410019}
+      - {x: -39.825684, y: 4.7149715, z: -3.4718814}
+      - {x: -38.11961, y: 3.3014622, z: -0.40199828}
+      - {x: -33.690563, y: 1.0385017, z: 0.9437103}
+      - {x: -30.494734, y: -0.5943631, z: 1.9147217}
+      - {x: -30.707138, y: -5.184204, z: 7.0961685}
+      isClosed: 1
       space: 0
       controlMode: 0
       autoControlLength: 0.3
@@ -167,9 +187,15 @@ MonoBehaviour:
       perAnchorNormalsAngle:
       - 0
       - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
       globalNormalsAngle: 0
       flipNormals: 0
-    vertexPathUpToDate: 1
+    vertexPathUpToDate: 0
     vertexPathMaxAngleError: 0.3
     vertexPathMinVertexSpacing: 0.01
     showTransformTool: 1
@@ -179,7 +205,7 @@ MonoBehaviour:
     displayControlPoints: 1
     bezierHandleScale: 1
     globalDisplaySettingsFoldout: 0
-    keepConstantHandleSize: 0
+    keepConstantHandleSize: 1
     showNormalsInVertexMode: 0
     showBezierPathInVertexMode: 0
     showDisplayOptions: 0
