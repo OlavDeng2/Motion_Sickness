@@ -6,6 +6,17 @@ public class RollerCoasterController : MonoBehaviour
 {
     //Path to follow
     public PathCreation.PathCreator path;
+    public SpeedVsDistance points;
+
+    private int currentPoint = 0;
+    private float distanceOfCurrentPoint;
+    private float distanceOfNextPoint;
+    private float distanceBetweenPoints;
+    private float speedOfCurrentPoint;
+    private float speedOfNextPoint;
+
+
+
     private bool hasStarted = false;
     private float currentSpeed = 1;
     private float distanceTraveled = 0;
@@ -22,5 +33,24 @@ public class RollerCoasterController : MonoBehaviour
         transform.position = path.path.GetPointAtDistance(distanceTraveled);
         transform.rotation = path.path.GetRotationAtDistance(distanceTraveled);
 
+        //move to the next point when passing a point
+        if (points.distance.Length >= currentPoint+1)
+        {
+            if (distanceTraveled > points.distance[currentPoint + 1])
+            {
+                currentPoint += 1;
+            }
+        }
+            
+
+    }
+
+    private void SetSpeed()
+    {
+
+        //current point is last point that was passed
+        //Need to accellerate to next point
+        //Accelleration is based on the distance between the points and the target speed of the next point.
+        //(v2-v1)/d to get the acceleration. Add that to the speed for every deltaT
     }
 }
