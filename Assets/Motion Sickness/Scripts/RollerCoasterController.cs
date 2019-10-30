@@ -19,7 +19,7 @@ public class RollerCoasterController : MonoBehaviour
 
 
     private bool hasStarted = false;
-    private float currentSpeed = 1;
+    private float currentSpeed = 4;
     private float distanceTraveled = 0;
 
     // Start is called before the first frame update

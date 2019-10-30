@@ -131,7 +131,7 @@ GameObject:
   - component: {fileID: 171980128}
   - component: {fileID: 171980127}
   m_Layer: 0
-  m_Name: Rollercoaster
+  m_Name: Rollercoaster track
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -302,7 +302,7 @@ MonoBehaviour:
       - 325.2801
       - 357.95505
       globalNormalsAngle: 180
-      flipNormals: 0
+      flipNormals: 1
     vertexPathUpToDate: 1
     vertexPathMaxAngleError: 0.3
     vertexPathMinVertexSpacing: 0
@@ -792,7 +792,7 @@ PrefabInstance:
     - target: {fileID: 514534357315645190, guid: e9393cfb287e5b6439caadfcf2e1f6c0,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.821
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 514534357315645190, guid: e9393cfb287e5b6439caadfcf2e1f6c0,
         type: 3}
@@ -848,7 +848,7 @@ PrefabInstance:
         type: 3}
       propertyPath: points
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 171980127}
     - target: {fileID: 226263289802041087, guid: e9393cfb287e5b6439caadfcf2e1f6c0,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -867,7 +867,7 @@ PrefabInstance:
     - target: {fileID: 226263289802041087, guid: e9393cfb287e5b6439caadfcf2e1f6c0,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.93
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e9393cfb287e5b6439caadfcf2e1f6c0, type: 3}
