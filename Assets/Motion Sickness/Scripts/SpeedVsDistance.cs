@@ -4,6 +4,6 @@ using UnityEngine;
 
 public class SpeedVsDistance : MonoBehaviour
 {
-    public int[] distance;
-    public int[] speed;
+    public float[] distance;
+    public float[] speed;
 }

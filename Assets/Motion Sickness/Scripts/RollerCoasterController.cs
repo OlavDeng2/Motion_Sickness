@@ -9,55 +9,74 @@ public class RollerCoasterController : MonoBehaviour
     public SpeedVsDistance points;
 
     private int currentPoint = 0;
-    private float distanceOfCurrentPoint;
-    private float distanceOfNextPoint;
-    private float distanceBetweenPoints;
-    private float speedOfCurrentPoint;
-    private float speedOfNextPoint;
+    private int nextPoint = 1;
     private float acceleration;
 
 
 
     private bool hasStarted = false;
-    private float currentSpeed = 4;
+    private float currentSpeed = 0;
     private float distanceTraveled = 0;
 
     // Start is called before the first frame update
     void Start()
     {
+        SetAcceleration();
     }
 
     // Update is called once per frame
     void Update()
     {
         distanceTraveled += currentSpeed * Time.deltaTime;
+
         transform.position = path.path.GetPointAtDistance(distanceTraveled);
         transform.rotation = path.path.GetRotationAtDistance(distanceTraveled);
 
-        //move to the next point when passing a point
-        if (points.distance.Length >= currentPoint+1)
+
+        //check if next point exists
+        if (nextPoint < points.distance.Length)
         {
-            if (distanceTraveled > points.distance[currentPoint + 1])
+            //Set next point as current point if you travel past it
+            if (distanceTraveled > points.distance[nextPoint])
             {
-                currentPoint += 1;
-                SetSpeed();
+                currentPoint = nextPoint;
+                nextPoint += 1;
+                Debug.Log(currentPoint);
+                Debug.Log(nextPoint);
+                SetAcceleration();
+
             }
         }
 
-        currentSpeed += acceleration;
+        else
+        {
+            acceleration = 0;
+            currentSpeed = points.speed[currentPoint];
+        }
 
+        if (currentSpeed > points.speed[currentPoint] || currentSpeed < points.speed[currentPoint])
+        {
+            currentSpeed += acceleration * Time.deltaTime;
+        }
+
+        else
+        {
+            acceleration = 0;
+            currentSpeed = points.speed[currentPoint];
+        }
+        Debug.Log("V " + currentSpeed);
+        Debug.Log("D " + distanceTraveled);
+        Debug.Log("A " + acceleration);
     }
 
-    private void SetSpeed()
+    private void SetAcceleration()
     {
-        //If there is no future point, keep constant speed
-        if (points.distance.Length >= currentPoint + 1)
+        if (nextPoint < points.distance.Length)
         {
-            //current point is last point that was passed
-            //Need to accellerate to next point
-            //Accelleration is based on the distance between the points and the target speed of the next point.
-            //(v2-v1)/d to get the acceleration. Add that to the speed for every deltaT
-            acceleration = (points.speed[currentPoint + 1] - points.speed[currentPoint]) / (points.distance[currentPoint + 1] - points.distance[currentPoint]);
+            float targetSpeed = points.speed[nextPoint];
+            float deltaD = points.distance[nextPoint] - points.distance[currentPoint];
+
+            acceleration = ((float)(targetSpeed*targetSpeed) - (float)(currentSpeed*currentSpeed)) / (float)(2*deltaD);
         }
 
         else
