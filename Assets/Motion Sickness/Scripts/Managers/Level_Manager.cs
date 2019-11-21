@@ -21,6 +21,7 @@ public class Level_Manager : MonoBehaviour
     {
         //Load the level selected in settings
         SceneManager.LoadScene(PlayerPrefs.GetString("level"));
+        Debug.Log(PlayerPrefs.GetString("level"));
     }
 
     public void QuitGame()
