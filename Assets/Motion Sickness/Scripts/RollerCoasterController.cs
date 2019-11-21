@@ -41,8 +41,6 @@ public class RollerCoasterController : MonoBehaviour
             {
                 currentPoint = nextPoint;
                 nextPoint += 1;
-                Debug.Log(currentPoint);
-                Debug.Log(nextPoint);
                 SetAcceleration();
 
             }
@@ -64,9 +62,6 @@ public class RollerCoasterController : MonoBehaviour
             acceleration = 0;
             currentSpeed = points.speed[currentPoint];
         }
-        Debug.Log("V " + currentSpeed);
-        Debug.Log("D " + distanceTraveled);
-        Debug.Log("A " + acceleration);
     }
 
     private void SetAcceleration()

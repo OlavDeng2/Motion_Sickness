@@ -54,6 +54,6 @@ public class PlayerController : MonoBehaviour
     //set the settings to the player
     public void SetSettings()
     {
-        Debug.Log(VRNose);
+        lowFovScreen.SetActive(lowFoV);
     }
 }
