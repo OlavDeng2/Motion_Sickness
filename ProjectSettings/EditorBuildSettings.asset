@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Motion Sickness/Scenes/Level1.unity
     guid: 4b0c40b90728006408641dcac093511f
+  - enabled: 1
+    path: Assets/Motion Sickness/Scenes/Level2.unity
+    guid: 06c83d2f344c5e34c8da5e8b298525e3
   m_configObjects: {}
