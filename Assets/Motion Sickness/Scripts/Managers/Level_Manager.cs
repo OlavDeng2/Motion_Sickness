@@ -19,7 +19,8 @@ public class Level_Manager : MonoBehaviour
 
     public void LoadLevel()
     {
-        //Load the lever selected in settings
+        //Load the level selected in settings
+        SceneManager.LoadScene(PlayerPrefs.GetString("level"));
     }
 
     public void QuitGame()
