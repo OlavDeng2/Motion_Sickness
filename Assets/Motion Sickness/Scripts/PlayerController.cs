@@ -4,14 +4,20 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+
+
     [Header("Motion Sickness Settings")]
     bool VRNose = false;
     bool lowFoV = false;
+
+    [Header("References")]
+    public GameObject lowFovScreen;
 
     // Start is called before the first frame update
     void Start()
     {
         LoadSettings();
+        SetSettings();
     }
 
     // Update is called once per frame
