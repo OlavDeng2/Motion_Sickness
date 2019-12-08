@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour
 
     [Header("References")]
     public GameObject lowFovScreen;
+    public GameObject virtualNose;
 
     // Start is called before the first frame update
     void Start()
@@ -55,5 +56,8 @@ public class PlayerController : MonoBehaviour
     public void SetSettings()
     {
         lowFovScreen.SetActive(lowFoV);
+        virtualNose.SetActive(VRNose);
+
+        Debug.Log("test settings have been set");
     }
 }
