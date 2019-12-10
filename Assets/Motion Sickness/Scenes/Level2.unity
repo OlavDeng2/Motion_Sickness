@@ -2284,7 +2284,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 520411764}
-  m_Mesh: {fileID: 1820109842}
+  m_Mesh: {fileID: 1833442747}
 --- !u!4 &520411767
 Transform:
   m_ObjectHideFlags: 0
@@ -3269,6 +3269,11 @@ PrefabInstance:
       propertyPath: points
       value: 
       objectReference: {fileID: 271508916}
+    - target: {fileID: 2897559677979561405, guid: e9393cfb287e5b6439caadfcf2e1f6c0,
+        type: 3}
+      propertyPath: distanceToEnd
+      value: 1430
+      objectReference: {fileID: 0}
     - target: {fileID: 3919984865968610510, guid: e9393cfb287e5b6439caadfcf2e1f6c0,
         type: 3}
       propertyPath: m_LocalPosition.y
@@ -5620,7 +5625,7 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1759406485}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!43 &1820109842
+--- !u!43 &1833442747
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
