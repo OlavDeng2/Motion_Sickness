@@ -130,7 +130,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lowFovScreen: {fileID: 8937087203787641912}
-  virtualNose: {fileID: 0}
+  virtualNose: {fileID: 7993340028543299328}
 --- !u!1 &8937087203787641912
 GameObject:
   m_ObjectHideFlags: 0
@@ -295,6 +295,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8394969435e188649bea486b3983ee74, type: 3}
+--- !u!1 &7993340028543299328 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 8394969435e188649bea486b3983ee74,
+    type: 3}
+  m_PrefabInstance: {fileID: 2148183425481487881}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6392109525581503763 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 8394969435e188649bea486b3983ee74,

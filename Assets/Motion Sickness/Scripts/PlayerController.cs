@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
     [Header("Motion Sickness Settings")]
     bool VRNose = false;
     bool lowFoV = false;
+    bool hulaGirl = false;
 
     [Header("References")]
     public GameObject lowFovScreen;
@@ -32,6 +33,7 @@ public class PlayerController : MonoBehaviour
     {
         VRNose = GetBool(PlayerPrefs.GetInt("VRNose"));
         lowFoV = GetBool(PlayerPrefs.GetInt("lowFoV"));
+        hulaGirl = GetBool(PlayerPrefs.GetInt("hulaGirl"));
     }
    
     private bool GetBool(int value)

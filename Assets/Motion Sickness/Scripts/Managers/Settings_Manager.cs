@@ -13,12 +13,14 @@ public class Settings_Manager : MonoBehaviour
     public Dropdown levelSelect;
     public Toggle virtualNoseToggle;
     public Toggle lowFovToggle;
+    public Toggle hulaGirlToggle;
 
     private string level = "level2";
 
     //1 = true, 0 = false
     private int VRNose = 0;
     private int lowFoV = 0;
+    private int hulaGirl = 0;
 
     //save the settings after them being set in the settings screen
     public void SaveSettings()
@@ -32,6 +34,9 @@ public class Settings_Manager : MonoBehaviour
 
         lowFoV = BoolToInt(lowFovToggle.isOn);
         PlayerPrefs.SetInt("lowFoV", lowFoV);
+
+        hulaGirl = BoolToInt(hulaGirlToggle.isOn);
+        PlayerPrefs.SetInt("hulaGirl", hulaGirl);
 
         CloseSettingsPanel();
     }
