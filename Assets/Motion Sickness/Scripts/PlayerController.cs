@@ -59,7 +59,7 @@ public class PlayerController : MonoBehaviour
     {
         lowFovScreen.SetActive(lowFoV);
         virtualNose.SetActive(VRNose);
-
+        GameObject.FindObjectOfType<RollerCoasterController>().hulaGirl.SetActive(hulaGirl);
         Debug.Log("test settings have been set");
     }
 }

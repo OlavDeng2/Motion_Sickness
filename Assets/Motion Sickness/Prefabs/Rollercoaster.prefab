@@ -126,6 +126,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 019a3a2210bef1349afbc962d892fa8b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hulaGirl: {fileID: 4952562784875261406}
   path: {fileID: 0}
   points: {fileID: 0}
   distanceToEnd: 1600
@@ -475,16 +476,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 514534357315645190}
     m_Modifications:
-    - target: {fileID: 6272560275149359438, guid: a04131a4d6c55af48bda26d841843d9d,
-        type: 3}
-      propertyPath: m_Name
-      value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 6272560275149359438, guid: a04131a4d6c55af48bda26d841843d9d,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 8933173050290153353, guid: a04131a4d6c55af48bda26d841843d9d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -539,6 +530,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6272560275149359438, guid: a04131a4d6c55af48bda26d841843d9d,
+        type: 3}
+      propertyPath: m_Name
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 6272560275149359438, guid: a04131a4d6c55af48bda26d841843d9d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a04131a4d6c55af48bda26d841843d9d, type: 3}

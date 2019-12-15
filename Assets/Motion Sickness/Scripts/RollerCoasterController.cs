@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class RollerCoasterController : MonoBehaviour
 {
+    public GameObject hulaGirl; 
+
     //Path to follow
     public PathCreation.PathCreator path;
     public SpeedVsDistance points;
